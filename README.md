@@ -8,10 +8,10 @@ Following this repository you will get a SQS queue, a Lambda and a DynamoDB tabl
 
 1. Follow [this tutorial](https://hevodata.com/learn/connect-sqs-to-dynamodb-2-easy-steps/).
 2. Create an environment variable called `DYNAMODB_TABLE`. Set the **DynamoDB table name** as a value.
-3. Copy the content of [lambda-dynamodb-crud.py]() in the lambda. Deploy it.
+3. Copy the content of [lambda-dynamodb-crud.py](https://github.com/juanalvarez123/aws-sqs-lambda-and-dynamodb-example/blob/master/lambda-dynamodb-crud.py) in the lambda. Deploy it.
 4. Send the message in the SQS.
 
-## SQS Message example
+## SQS message example
 
 Message body:
 ```bash
@@ -31,4 +31,5 @@ Example:
 
 ## DynamoDB data
 
+This is how the message is stored in the table:
 ![Screenshot](./assets/dynamodb-data.png)
